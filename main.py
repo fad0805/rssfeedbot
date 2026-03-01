@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 load_dotenv()
 
 RSS_URL = os.getenv("RSS_URL")
-MISSKEY_URL = "f{os.getenv('MISSKEY_URL')}/api/"
+MISSKEY_URL = f"{os.getenv('MISSKEY_URL')}/api/"
 MISSKEY_TOKEN = os.getenv("MISSKEY_TOKEN")
 LAST_LINK_FILE = "last_link.txt"
 
